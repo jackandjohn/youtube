@@ -1,3 +1,25 @@
 # Wordle
 
-<a href="javascript: url='https://www.nytimes.com/games/wordle/index.html'; window.location.href == url ? alert(JSON.parse(localStorage['nyt-wordle-state']).solution) : window.location.href = url">Wordle Spoiler</a>
+<a href="javascript:
+(function(){
+  let url = 'https://www.nytimes.com/games/wordle/index.html';
+  let game = document.querySelector('game-app');
+  if(window.location.href === url) {
+    alert(game.solution);
+  } else {
+    window.location.href = url;
+  }
+}())">Wordle - Spoiler</a>
+
+```javascript
+javascript:
+(function(){
+  let url = 'https://www.nytimes.com/games/wordle/index.html';
+  let game = document.querySelector('game-app');
+  if(window.location.href === url) {
+    alert(game.solution);
+  } else {
+    window.location.href = url;
+  }
+}())
+```
