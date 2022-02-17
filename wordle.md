@@ -4,7 +4,7 @@ Bookmarklets are javascript applciations that you install and run by simply crea
 
 How to use:
 
-1. Open your bookmark toolbar: `ctrl + b`
+1. Open your bookmark toolbar: `ctrl + shift + b`
 2. Drag any links on this page to your bookmark toolbar
 3. Click the bookmark to run the script
 
