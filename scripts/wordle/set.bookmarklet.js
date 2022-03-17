@@ -52,7 +52,7 @@ javascript:
         game.solution = list[offset % list.length];
         game.dayOffset = offset;
       } catch {
-        alert("Invalid choice! Must enter a number, 5 letter word, date, or recognized code");
+        alert('Invalid choice! Must enter a number, 5 letter word, date, or recognized code');
       }
     }
   }
