@@ -12,7 +12,7 @@ Alternatively you can create a new bookmark and copy the link location then past
 
 ## Wordle Bookmarklets
 
-<a href="javascript:(function(){let url = 'https://www.nytimes.com/games/wordle/index.html';let game = document.querySelector('game-app');if(window.location.href === url) {alert(game.solution);} else {window.location.href = url;}}())">Wordle - Spoiler</a> #cheat
+<a href="javascript:(function(){let url = 'https://www.nytimes.com/games/wordle/index.html';let gameState = JSON.parse(localStorage['nyt-wordle-state']);if(window.location.href === url) {alert(gameState.solution);} else {window.location.href = url;}}())">Wordle - Spoiler</a> #cheat
 
 This script will open the wordle page if you aren't already on it. Once on the page, activating this bookmarklet will show you the solution to the puzzle.
 
